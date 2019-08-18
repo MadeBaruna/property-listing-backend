@@ -1,0 +1,34 @@
+enum PlaceType {
+  OFFICE
+  APARTMENT
+}
+
+type Address {
+  id: ID! @id
+  street: String!
+  city: String!
+  country: String!
+  longitude: Float!
+  latitude: Float!
+}
+
+type Facility {
+  id: ID! @id
+  name: String!
+}
+
+type Image {
+  id: ID! @id
+  url: String!
+  thumbnailUrl: String!
+}
+
+type Place {
+  id: ID! @id
+  name: String!
+  description: String!
+  facilities: [Facility!]!
+  type: PlaceType!
+  images: [Image!]!
+  address: Address!
+}

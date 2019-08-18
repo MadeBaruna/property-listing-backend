@@ -1,0 +1,21 @@
+{
+  "name": "property-listing-backend",
+  "version": "1.0.0",
+  "description": "A graphql service for property listing react app",
+  "main": "src/index.ts",
+  "author": "Made Baruna",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "apollo-server": "^2.8.1",
+    "prisma-client-lib": "^1.34.5"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "seed": "ts-node seed.ts"
+  }
+}
