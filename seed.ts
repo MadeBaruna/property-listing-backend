@@ -379,6 +379,363 @@ async function main() {
       ]
     }
   });
+
+  await prisma.createPlace({
+    name: "Apartemen Casablanca",
+    description: "Apartemen Casablanca berlokasi di Jl. Casablanca No.Kav. 12, RT.14/RW.5, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870",
+    type: "APARTMENT",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Selatan",
+        street: "Jl. Casablanca No.Kav. 12, RT.14/RW.5, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870",
+        latitude: -6.2229424,
+        longitude: 106.8452811,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[0].id },
+        { id: facilites[1].id },
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+        { id: facilites[4].id },
+        { id: facilites[5].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=10",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=10"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=10",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=10"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=10",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=10"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=10",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=10"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=10",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=10"
+        },
+      ]
+    }
+  });
+
+  await prisma.createPlace({
+    name: "Hampton's Park Apartment",
+    description: "Hampton's Park Apartment berlokasi di Podomoro City Jl. Terogong Raya No.18, RT.10/RW.10, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430",
+    type: "APARTMENT",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Selatan",
+        street: "Jl. Terogong Raya No.18, RT.10/RW.10, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430",
+        latitude: -6.281984,
+        longitude: 106.7906928,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[0].id },
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+        { id: facilites[6].id },
+        { id: facilites[7].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=11",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=11"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=11",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=11"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=11",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=11"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=11",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=11"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=11",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=11"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=11",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=11"
+        },
+      ]
+    }
+  });
+
+  await prisma.createPlace({
+    name: "Belmont Residence Tower Mont Blanc",
+    description: "Belmont Residence Tower Mont Blanc berlokasi di Jl. Lapangan Bola, Jl. Meruya Ilir Raya, RT.8/RW.7, Srengseng, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11630",
+    type: "APARTMENT",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Barat",
+        street: "Jl. Lapangan Bola, Jl. Meruya Ilir Raya, RT.8/RW.7, Srengseng, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11630",
+        latitude: -6.2007575,
+        longitude: 106.7627764,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[1].id },
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+        { id: facilites[4].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=13",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=13"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=13",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=13"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=13",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=13"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=13",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=13"
+        },
+      ]
+    }
+  });
+
+  await prisma.createPlace({
+    name: "The Summit",
+    description: "The Summit berlokasi di Jl. Boulevard Sentra, Kelapa Gading, Timur, RT.13/RW.18, RT.13/RW.18, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
+    type: "APARTMENT",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Utara",
+        street: "Jl. Boulevard Sentra, Kelapa Gading, Timur, RT.13/RW.18, RT.13/RW.18, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
+        latitude: -6.1587102,
+        longitude: 106.9088173,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[5].id },
+        { id: facilites[6].id },
+        { id: facilites[7].id },
+        { id: facilites[8].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=12",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=12"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=12",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=12"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=12",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=12"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=12",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=12"
+        },
+      ]
+    }
+  });
+  
+  await prisma.createPlace({
+    name: "Regus - Jakarta, Beltway Office Park",
+    description: "Regus - Jakarta, Beltway Office Park berlokasi di Beltway Office Park Tower B 5th floor, RT.7/RW.2, Ragunan, Pasar Minggu, Jakarta, 12550",
+    type: "OFFICE",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Selatan",
+        street: "Beltway Office Park Tower B 5th floor, RT.7/RW.2, Ragunan, Pasar Minggu, Jakarta, 12550",
+        latitude: -6.2914326,
+        longitude: 106.8185449,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[1].id },
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=20",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=20"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=20",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=20"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=20",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=20"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=20",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=20"
+        },
+      ]
+    }
+  });
+
+  await prisma.createPlace({
+    name: "Wisma Korindo",
+    description: "Wisma Korindo office building",
+    type: "OFFICE",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Selatan",
+        street: "MT Haryono Street No.Kav 62, RT.2/RW.2, Pancoran, South Jakarta City, Jakarta 12780",
+        latitude: -6.2439533,
+        longitude: 106.8440366,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[1].id },
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+        { id: facilites[4].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=21",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=21"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=21",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=21"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=21",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=21"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=21",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=21"
+        },
+      ]
+    }
+  });
+
+  await prisma.createPlace({
+    name: "SewaKantorCBD",
+    description: "SewaKantorCBD space rental agency",
+    type: "OFFICE",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Timur",
+        street: "Graha MIR lt. No., Jl. Pemuda Asli 4 No.9, RT.9/RW.3, Rawamangun, Pulo Gadung, East Jakarta City, Jakarta 13220",
+        latitude: -6.1924806,
+        longitude: 106.8806219,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[1].id },
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=22",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=22"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=22",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=22"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=22",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=22"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=22",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=22"
+        },
+      ]
+    }
+  });
+
+  await prisma.createPlace({
+    name: "MARQUEE - Pondok Indah Office ",
+    description: "MARQUEE - Pondok Indah Office berlokasi di V, Pd. Indah Office Tower 3, Jl. Sultan Iskandar Muda No.RT.5, RT.4/RW.3, Pd. Pinang, Jakarta, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310",
+    type: "OFFICE",
+    address: {
+      create: {
+        country: "Indonesia",
+        city: "Jakarta Selatan",
+        street: "V, Pd. Indah Office Tower 3, Jl. Sultan Iskandar Muda No.RT.5, RT.4/RW.3, Pd. Pinang, Jakarta, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310",
+        latitude: -6.262937,
+        longitude: 106.7818737,
+      }
+    },
+    facilities: {
+      connect: [
+        { id: facilites[2].id },
+        { id: facilites[3].id },
+        { id: facilites[4].id },
+        { id: facilites[5].id },
+      ]
+    },
+    images: {
+      create: [
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=24",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=24"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=24",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=24"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=24",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=24"
+        },
+        {
+          thumbnailUrl: "https://loremflickr.com/320/240/apartment,office?lock=24",
+          url: "https://loremflickr.com/1280/720/apartment,office?lock=24"
+        },
+      ]
+    }
+  });
 }
 
 main().catch(e => console.error(e))
