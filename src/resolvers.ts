@@ -10,10 +10,12 @@ export const resolvers = {
       return facilities;
     },
 
-    places: async (parent, { first, after, search, facilites, type }) => {
+    places: async (parent, { first, last, after, before, search, facilites, type }) => {
       const places = await prisma.places({
         first,
+        last,
         after,
+        before,
         where: {
           name_contains: search,
           type,

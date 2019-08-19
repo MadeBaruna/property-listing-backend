@@ -38,7 +38,7 @@ export const typeDefs = gql`
   
   type Query {
     facilities: [Facility!]!
-    places(first: Int, after: String, search: String, facilites: [ID!], type: PlaceType): [Place!]!
-    place(id: String!): Place!
+    places(first: Int, last: Int, after: String, before: String, search: String, facilites: [ID!], type: PlaceType): [Place!]!
+    place(id: ID!): Place!
   }
 `;
